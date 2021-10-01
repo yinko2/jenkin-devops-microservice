@@ -34,5 +34,17 @@ pipeline {
 			}
 		}
 	}
+
+	post {
+		always {
+			echo "I'm awesome. I run always."
+		}
+		success {
+			echo "I run when I am successful."
+		}
+		failure {
+			echo "I run when I fail."
+		}
+	}
 	
 }
